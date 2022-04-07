@@ -15,8 +15,8 @@ class SortingVisualizor extends React.Component {
 
   setArray() {
     const newArray = [];
-    for (let i = 0; i < 100; i++) {
-      newArray.push(getRandomNum(5, 1000));
+    for (let i = 0; i < 150; i++) {
+      newArray.push(getRandomNum(5, 550));
     }
 
     this.setState({ array: newArray });
@@ -26,12 +26,10 @@ class SortingVisualizor extends React.Component {
     const { array } = this.state;
 
     return (
-      <div>
+      <div className="bar-container">
         {array.map((value, index) => {
           return (
-            <div className="bar" key={index}>
-              {value}
-            </div>
+            <div className="bar" style={{height: value, width: '7px'}} key={index} />
           );
         })}
       </div>

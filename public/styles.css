@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b214b;
+}
+
+.bar {
+  margin: 1.5px;
+  background-color: #8f9ad4;
+}
+
+.bar-container {
+  display: flex;
+  height: 700px;
+  width: 150 * 7;
+  align-items: flex-end;
+  text-align: center;
+  rotate: 90deg;
+}
